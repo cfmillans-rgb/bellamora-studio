@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellamora Studio | Salón de Belleza y Estética en Santiago, Chile</title>
+  <meta name="description" content="Bellamora Studio es el salón de belleza y estética más exclusivo de Santiago. Cortes, color, tratamientos capilares y spa con los mejores profesionales. Agenda tu cita hoy.">
+  <meta name="author" content="Bellamora Studio">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23C1693C'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' font-weight='bold' text-anchor='middle' fill='%23F4EDE4'%3EB%3C/text%3E%3Cline x1='22' y1='82' x2='78' y2='82' stroke='%23C9A86A' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-text">Bella<span>mora</span></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+  <!-- ===================== TOP BAR ===================== -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span class="me-3">
+            <i class="bi bi-telephone-fill me-1"></i>
+            <a href="tel:+56223456789">+56 2 2345 6789</a>
+          </span>
+          <span>
+            <i class="bi bi-envelope-fill me-1"></i>
+            <a href="mailto:hola@bellamorastudio.cl">hola@bellamorastudio.cl</a>
+          </span>
+        </div>
+        <div class="col-md-6 text-end">
+          <span class="me-3">
+            <i class="bi bi-geo-alt-fill me-1"></i> Av. Providencia 1234, Providencia
+          </span>
+          <span class="top-bar-social">
+            <a href="#" aria-label="Instagram de Bellamora"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook de Bellamora"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="TikTok de Bellamora"><i class="bi bi-tiktok"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-bellamora sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-text" href="#">
+        Bella<span>mora</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <i class="bi bi-list fs-3" style="color: var(--carbon);"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link btn-nav-cta" href="#agenda">
+              <i class="bi bi-calendar-check me-1"></i> Reservar Hora
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="img/hero.png" alt="Interior elegante del salón Bellamora Studio en Santiago de Chile, con estaciones de estilismo profesional e iluminación cálida" width="1920" height="1080">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Salón de Belleza & Estética</p>
+      <h1>Bellamora</h1>
+      <div class="hero-divider"></div>
+      <p class="hero-tagline">Donde tu belleza se encuentra con el arte</p>
+      <a href="#agenda" class="btn-hero">
+        Agenda tu cita
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST / SOCIAL PROOF ===================== -->
+  <section class="trust-section section-padding" aria-label="Datos de confianza de Bellamora Studio">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3 fade-up">
+          <div class="trust-item">
+            <div class="trust-number">12+</div>
+            <div class="trust-label">Años de experiencia</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="trust-item">
+            <div class="trust-number">8.500+</div>
+            <div class="trust-label">Clientas felices</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="trust-item">
+            <div class="trust-number">15</div>
+            <div class="trust-label">Profesionales expertos</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-up">
+          <div class="trust-item">
+            <div class="trust-number">4.9 ★</div>
+            <div class="trust-label">Valoración en Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICIOS ===================== -->
+  <section class="services-section section-padding-lg" id="servicios">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Lo que hacemos</p>
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4">
+        <!-- Corte & Estilo -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="img/service-corte.png" alt="Estilista profesional realizando un corte de cabello preciso en Bellamora Studio" width="600" height="400" loading="lazy">
+              <span class="service-badge">Popular</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Corte & Estilo</h3>
+              <p>Desde un bob estructurado hasta capas texturizadas: cada corte se diseña a la medida de tu rostro, estilo de vida y personalidad. Incluye lavado, diagnóstico capilar y secado profesional.</p>
+              <div class="service-price">
+                $18.000 <span>/ sesión</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Color & Mechas -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="img/service-color.png" alt="Resultado de un balayage profesional con tonos miel y caramelo en cabello castaño" width="600" height="400" loading="lazy">
+              <span class="service-badge">Tendencia</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Color & Mechas</h3>
+              <p>Balayage, highlights, tonos fantasía o cobertura de canas: trabajamos con productos de alta gama para lograr un color vibrante, luminoso y de larga duración que cuida la fibra capilar.</p>
+              <div class="service-price">
+                $45.000 <span>/ desde</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tratamientos & Spa -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="img/service-tratamiento.png" alt="Clienta recibiendo un tratamiento de spa capilar con productos premium en ambiente relajante" width="600" height="400" loading="lazy">
+              <span class="service-badge">Bienestar</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Tratamientos & Spa Capilar</h3>
+              <p>Hidratación profunda, keratina brasileña, botox capilar y rituales antiestrés. Devolvemos la vitalidad a tu cabello con protocolos personalizados y masajes relajantes de cuero cabelludo.</p>
+              <div class="service-price">
+                $32.000 <span>/ sesión</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERÍA ===================== -->
+  <section class="gallery-section section-padding-lg" id="galeria">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Nuestro trabajo</p>
+        <h2 class="section-title">Galería de Estilos</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="gallery-grid fade-up">
+        <div class="gallery-item">
+          <img src="img/gallery-1.png" alt="Peinado elegante de novia con ondas sueltas y accesorios florales realizado en Bellamora Studio" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Peinado de novia</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/gallery-2.png" alt="Brushing profesional con acabado liso y brillante en cabello largo" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Brushing perfecto</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/bellamora-g3/600/600" alt="Corte bob moderno y asimétrico con textura definida" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Bob moderno</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/bellamora-g4/600/600" alt="Coloración fantasía en tonos rosados y lavanda sobre cabello rubio" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Color fantasía</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/bellamora-g5/600/600" alt="Trenzas elaboradas con detalles dorados para evento especial" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Trenzas de evento</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/seed/bellamora-g6/600/600" alt="Resultado de tratamiento de keratina con brillo espejo en cabello oscuro" width="600" height="600" loading="lazy">
+          <div class="gallery-item-overlay"><span>Keratina espejo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AGENDA WIDGET ===================== -->
+  <section class="agenda-section section-padding-lg" id="agenda">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Fácil y rápido</p>
+        <h2 class="section-title">Reserva tu Hora</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="agenda-widget fade-up" role="group" aria-label="Widget de reserva de citas para Bellamora Studio">
+        <!-- Step 1: Day -->
+        <div class="agenda-step">
+          <div class="agenda-step-label">
+            <span class="agenda-step-number" aria-hidden="true">1</span>
+            Elige tu día
+          </div>
+          <div id="agenda-days" class="day-selector" role="listbox" aria-label="Selecciona un día para tu cita">
+            <!-- JS generates day buttons -->
+          </div>
+        </div>
+
+        <!-- Step 2: Time -->
+        <div class="agenda-step" id="agenda-time-step">
+          <div class="agenda-step-label">
+            <span class="agenda-step-number" aria-hidden="true">2</span>
+            Elige tu hora
+          </div>
+          <div id="agenda-times" class="time-grid" role="listbox" aria-label="Selecciona una hora disponible">
+            <!-- JS generates time buttons -->
+          </div>
+        </div>
+
+        <!-- Summary & Confirm -->
+        <div class="agenda-confirm-wrapper">
+          <p class="agenda-selection-summary" id="agenda-summary" aria-live="polite">
+            Selecciona un día y una hora para agendar
+          </p>
+          <button type="button" class="btn-whatsapp-confirm" id="agenda-confirm" disabled aria-disabled="true" aria-label="Confirmar cita por WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Confirmar por WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIOS ===================== -->
+  <section class="testimonials-section section-padding-lg" id="testimonios">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label" style="color: var(--dorado);">Lo que dicen</p>
+        <h2 class="section-title" style="color: var(--crema);">Testimonios de Nuestras Clientas</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Llegué con el pelo destruido por decoloraciones anteriores y salí con un balayage increíble. El equipo se tomó el tiempo de explicarme cada paso. Ahora no confío en nadie más."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">CA</div>
+              <div class="testimonial-author-info">
+                <strong>Catalina Araya</strong>
+                <span>Clienta hace 3 años</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"El ambiente del salón es espectacular — te relajai al tiro. Me hicieron un corte que todas mis amigas me preguntaron dónde fui. 100% recomendado para quien busca algo premium."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MV</div>
+              <div class="testimonial-author-info">
+                <strong>Macarena Vergara</strong>
+                <span>Clienta hace 5 años</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-6 col-lg-4 fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Fui por un tratamiento capilar y salí sintiéndome como de comercial de shampoo. El masaje de cuero cabelludo es adictivo. Ya agendé mi próxima sesión antes de irme."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">FP</div>
+              <div class="testimonial-author-info">
+                <strong>Francisca Pinto</strong>
+                <span>Clienta hace 1 año</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq-section section-padding-lg" id="faq">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="section-label">Resolvemos tus dudas</p>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion faq-accordion fade-up" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                  ¿Necesito reservar hora o atienden por orden de llegada?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Para garantizar tu experiencia, trabajamos exclusivamente con cita previa. Puedes agendar tu hora a través de nuestro widget de reserva en esta misma página, por WhatsApp o llamando al +56 2 2345 6789. Te recomendamos reservar con al menos 48 horas de anticipación, especialmente para servicios de color o tratamientos extensos.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  ¿Qué marcas de productos utilizan?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Trabajamos con marcas de gama profesional como Wella Professionals, Olaplex, Moroccanoil y Kérastase. Seleccionamos cada producto pensando en resultados visibles que respeten la salud de tu cabello. Además, nuestros tratamientos de spa utilizan líneas orgánicas y libres de sulfatos.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  ¿Cuánto dura una sesión de color o balayage?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Depende del estado actual de tu cabello y del resultado que busquemos juntas. Un balayage completo puede tomar entre 2,5 y 4 horas, incluyendo el diagnóstico inicial, la aplicación, procesado, toner y secado. Nos tomamos el tiempo necesario para que cada detalle quede perfecto — nunca apuramos el proceso.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  ¿Ofrecen estacionamiento o acceso por metro?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Estamos ubicados en Av. Providencia 1234, a solo 3 cuadras de la estación Pedro de Valdivia del Metro. Contamos con estacionamiento subterráneo con tarifa preferencial para clientas. También puedes llegar fácilmente en bicicleta — tenemos bicicletero seguro en el edificio.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  ¿Tienen políticas de cancelación?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Entendemos que los planes cambian. Pedimos que nos avises con al menos 24 horas de anticipación si necesitas cancelar o reagendar tu cita. Las cancelaciones con menos de 6 horas de anticipación pueden estar sujetas a un cargo del 30% del valor del servicio agendado. Nos comunicamos por WhatsApp para cualquier cambio.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA CIERRE ===================== -->
+  <section class="cta-section section-padding-lg">
+    <div class="container">
+      <div class="fade-up" style="position: relative; z-index: 1;">
+        <p class="section-label" style="color: var(--dorado-light);">Tu momento es ahora</p>
+        <h2 class="mb-3">¿Lista para brillar?</h2>
+        <p>Reserva tu hora hoy y vive la experiencia Bellamora. Tu cabello merece lo mejor.</p>
+        <a href="#agenda" class="btn-cta-light">
+          Agendar mi cita
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">Bella<span>mora</span></div>
+          <p>Somos un equipo apasionado por resaltar tu belleza natural. Cada servicio es una experiencia diseñada para que te sientas única.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram de Bellamora"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook de Bellamora"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="TikTok de Bellamora"><i class="bi bi-tiktok"></i></a>
+            <a href="#" aria-label="YouTube de Bellamora"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="bi bi-geo-alt me-2"></i> Av. Providencia 1234, Providencia, Santiago</li>
+            <li><i class="bi bi-telephone me-2"></i> <a href="tel:+56223456789">+56 2 2345 6789</a></li>
+            <li><i class="bi bi-whatsapp me-2"></i> <a href="https://wa.me/56912345678">+56 9 1234 5678</a></li>
+            <li><i class="bi bi-envelope me-2"></i> <a href="mailto:hola@bellamorastudio.cl">hola@bellamorastudio.cl</a></li>
+          </ul>
+        </div>
+        <!-- Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h3>Horarios</h3>
+          <ul class="footer-hours">
+            <li><span>Lunes a Viernes</span><span>09:00 – 20:00</span></li>
+            <li><span>Sábado</span><span>09:00 – 18:00</span></li>
+            <li><span>Domingo</span><span>10:00 – 15:00</span></li>
+            <li><span>Festivos</span><span>Cerrado</span></li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#agenda">Reservar hora</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bellamora Studio. Todos los derechos reservados. Hecho con <i class="bi bi-heart-fill" style="color: var(--terracota);"></i> en Santiago de Chile.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING WHATSAPP ===================== -->
+  <a href="https://wa.me/56912345678?text=Hola%20Bellamora%20%F0%9F%92%9B%20Quisiera%20hacer%20una%20consulta" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
