@@ -282,7 +282,7 @@ function initAgendaWidget() {
       `Hola Bellamora 💛 Quisiera agendar una cita para el ${formattedDate} a las ${selectedTime} hrs. ¡Gracias!`
     );
 
-    window.open(`https://wa.me/56912345678?text=${message}`, '_blank', 'noopener');
+    window.open(`https://wa.me/569XXXXXXXX?text=${message}`, '_blank', 'noopener');
   });
 
   // Initialize
